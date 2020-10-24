@@ -55,4 +55,10 @@ public class UserController {
                 .orElseThrow(() -> new IllegalArgumentException("Invalid user Id:" + id));
         userRepository.delete(user);
     }
+
+    @GetMapping("/v1")
+    public String v1() {
+
+        return "This is v1";
+    }
 }
