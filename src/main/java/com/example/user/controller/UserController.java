@@ -61,4 +61,10 @@ public class UserController {
 
         return "This is v1";
     }
+
+    @GetMapping("/v2")
+    public String v2() {
+
+        return "This is v2";
+    }
 }
